@@ -1,0 +1,11 @@
+> pipe1 created
+> pump1 created
+> pump2 created
+> saboteur1 created
+> pipe1.nodes = pump1
+> pump1.pipes = pipe1
+> pipe1.nodes = pump1, pump2
+> pump2.pipes = pipe1
+> pipe1.players = saboteur1
+> saboteur1.standingOn = pipe1
+> saboteur1.standingOn.lubricated = true

@@ -1,0 +1,8 @@
+create pipe1 pipe
+create pump1 pump
+create cistern1 cistern
+connect pipe1 pump1
+connect pipe1 cistern1
+state set pipe1 heldWater 1
+waterFlow cistern1
+state get counter mechanicPoints

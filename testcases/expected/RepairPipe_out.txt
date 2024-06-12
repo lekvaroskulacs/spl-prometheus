@@ -1,0 +1,13 @@
+> pipe1 created
+> spring1 created
+> pump1 created
+> mechanic1 created
+> pipe1.nodes = spring1
+> spring1.pipes = pipe1
+> pipe1.nodes = spring1, pump1
+> pump1.pipes = pipe1
+> pipe1.broken = true
+> pipe1.players = mechanic1
+> mechanic1.standingOn = pipe1
+> mechanic1.standingOn.broken = false
+> mechanic1.standingOn.readyToPierce = false

@@ -1,0 +1,17 @@
+> pipe1 created
+> pipe2 created
+> pump1 created
+> pump2 created
+> pump3 created
+> pipe1.nodes = pump1
+> pump1.pipes = pipe1
+> pipe1.nodes = pump1, pump2
+> pump2.pipes = pipe1
+> pipe2.nodes = pump2
+> pump2.pipes = pipe1, pipe2
+> pipe2.nodes = pump2, pump3
+> pump3.pipes = pipe2
+> pump2.activeIn = pipe1
+> pump2.activeOut = pipe2
+INFO: "pump2 is empty"
+> pipe1 lost 0

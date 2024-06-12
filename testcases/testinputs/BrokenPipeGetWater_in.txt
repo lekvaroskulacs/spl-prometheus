@@ -1,0 +1,9 @@
+create pipe1 pipe
+create spring1 spring
+create pump1 pump
+connect pipe1 spring1
+connect pipe1 pump1
+state set pipe1 broken true
+waterFlow spring1
+state get counter saboteurPoints
+state get pipe1 heldWater

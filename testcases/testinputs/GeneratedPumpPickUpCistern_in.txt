@@ -1,0 +1,9 @@
+create pipe1 pipe
+create cistern1 cistern
+create pump1 pump
+create mechanic1 mechanic
+connect pipe1 cistern1
+connect pipe1 pump1
+generate cistern1 genpipe1 genpump1
+move mechanic1 cistern1
+pickup mechanic1 genpump1

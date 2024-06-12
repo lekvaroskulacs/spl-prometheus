@@ -1,0 +1,11 @@
+create pipe1 pipe
+create pump1 pump
+create pump2 pump
+create mechanic1 mechanic
+create mechanic2 mechanic
+connect pipe1 pump1
+connect pipe1 pump2
+move mechanic1 pump1
+move mechanic2 pump2
+pickup mechanic1 pipe1
+pickup mechanic2 pipe1

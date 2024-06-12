@@ -1,0 +1,15 @@
+> pipe1 created
+> pump1 created
+> pump2 created
+> mechanic1 created
+> mechanic2 created
+> pipe1.nodes = pump1
+> pump1.pipes = pipe1
+> pipe1.nodes = pump1, pump2
+> pump2.pipes = pipe1
+> pump1.players = mechanic1
+> mechanic1.standingOn = pump1
+> pump2.players = mechanic2
+> mechanic2.standingOn = pump2
+> mechanic1.heldItems = pipe1
+> mechanic2.heldItems = pipe1

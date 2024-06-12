@@ -1,0 +1,9 @@
+create pump1 pump
+create pump2 pump
+create pipe1 pipe
+create saboteur1 saboteur
+connect pipe1 pump1
+connect pipe1 pump2
+state set pipe1 lubricated true
+move saboteur1 pump1
+move saboteur1 pipe1

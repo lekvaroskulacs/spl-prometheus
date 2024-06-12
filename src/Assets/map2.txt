@@ -1,0 +1,32 @@
+create p1 pump 350 180
+create p2 pump 650 150
+create p3 pump 830 250
+create pipe1 pipe
+create pipe2 pipe
+create pipe3 pipe
+create pipe4 pipe
+create pipe5 pipe
+create pipe6 pipe
+create c1 cistern 1000 150
+create c2 cistern 1000 300
+create s1 spring 100 150
+create s2 spring 100 300
+connect pipe1 s1
+connect pipe1 p1
+connect pipe2 s2
+connect pipe2 p2
+connect pipe3 p1
+connect pipe3 p3
+connect pipe4 p2
+connect pipe4 p3
+connect pipe5 p3
+connect pipe5 c1
+connect pipe6 p3
+connect pipe6 c2
+state set p1 activeIn pipe1
+state set p1 activeOut pipe3
+state set p2 activeIn pipe2
+state set p2 activeOut pipe4
+state set p3 activeIn pipe4
+state set p3 activeOut pipe5
+startGame

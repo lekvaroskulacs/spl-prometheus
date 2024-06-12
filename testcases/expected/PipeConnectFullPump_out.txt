@@ -1,0 +1,25 @@
+> pipe1 created
+> pipe2 created
+> pump1 created
+> pump2 created
+> pump3 created
+> mechanic1 created
+> pipe1.nodes = pump1
+> pump1.pipes = pipe1
+> pipe1.nodes = pump1, pump2
+> pump2.pipes = pipe1
+> pipe2.nodes = pump2
+> pump2.pipes = pipe1, pipe2
+> pipe2.nodes = pump2, pump3
+> pump3.pipes = pipe2
+> pump3.maximumPipes = 1
+> pump2.players = mechanic1
+> mechanic1.standingOn = pump2
+> mechanic1.heldItems = pipe1
+> pipe2.players = mechanic1
+> mechanic1.standingOn = pipe2
+> pump2.players = null
+> pump3.players = mechanic1
+> mechanic1.standingOn = pump3
+> pipe2.players = null
+INFO: "Can't place pipe1 here, because pump3 reached pipe capacity"

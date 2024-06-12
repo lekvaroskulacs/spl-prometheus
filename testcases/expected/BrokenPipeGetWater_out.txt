@@ -1,0 +1,11 @@
+> pipe1 created
+> spring1 created
+> pump1 created
+> pipe1.nodes = spring1
+> spring1.pipes = pipe1
+> pipe1.nodes = spring1, pump1
+> pump1.pipes = pipe1
+> pipe1.broken = true
+> pipe1 gained 0
+> counter.saboteurPoints = 1
+> pipe1.heldWater = 0

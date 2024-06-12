@@ -1,0 +1,14 @@
+create pipe1 pipe
+create pipe2 pipe
+create pump1 pump
+create pump2 pump
+create pump3 pump
+connect pipe1 pump1
+connect pipe1 pump2
+connect pipe2 pump2
+connect pipe2 pump3
+state set pipe1 heldWater 1
+state set pump2 heldWater 1
+state set pump2 activeIn pipe1
+state set pump2 activeOut pipe2
+waterFlow pump2

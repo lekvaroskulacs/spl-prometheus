@@ -1,0 +1,14 @@
+> pipe1 created
+> pump1 created
+> pump2 created
+> mechanic1 created
+> saboteur1 created
+> pipe1.nodes = pump1
+> pump1.pipes = pipe1
+> pipe1.nodes = pump1, pump2
+> pump2.pipes = pipe1
+> pump1.players = mechanic1
+> mechanic1.standingOn = pump1
+> pipe1.players = saboteur1
+> saboteur1.standingOn = pipe1
+INFO: "Can't move to pipe1, saboteur1 is standing on it"

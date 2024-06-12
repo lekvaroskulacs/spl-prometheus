@@ -1,0 +1,79 @@
+create p1 pump 350 180
+create p2 pump 650 150
+create p3 pump 830 250
+create p4 pump 310 380
+create p5 pump 520 340
+create p6 pump 720 420
+create pipe1 pipe
+create pipe2 pipe
+create pipe3 pipe
+create pipe4 pipe
+create pipe5 pipe
+create pipe6 pipe
+create pipe7 pipe
+create pipe8 pipe
+create pipe9 pipe
+create pipe10 pipe
+create pipe11 pipe
+create pipe12 pipe
+create pipe13 pipe
+create pipe14 pipe
+create pipe15 pipe
+create c1 cistern 1000 150
+create c2 cistern 1000 300
+create c3 cistern 1000 450
+create s1 spring 100 150
+create s2 spring 100 300
+create s3 spring 100 450
+connect pipe1 s1
+connect pipe1 p1
+connect pipe2 p1
+connect pipe2 p2
+connect pipe3 p2
+connect pipe3 p3
+connect pipe4 p3
+connect pipe4 c1
+connect pipe5 c2
+connect pipe5 p3
+connect pipe6 s2
+connect pipe6 p4
+connect pipe7 s3
+connect pipe7 p4
+connect pipe8 p1
+connect pipe8 p4
+connect pipe9 p4
+connect pipe9 p5
+connect pipe10 p5
+connect pipe10 p1
+connect pipe11 p5
+connect pipe11 p2
+connect pipe12 p5
+connect pipe12 p6
+connect pipe13 p2
+connect pipe13 p6
+connect pipe14 p6
+connect pipe14 p3
+connect pipe15 p6
+connect pipe15 c3
+state set p1 activeIn pipe1
+state set p1 activeOut pipe2
+state set p2 activeIn pipe2
+state set p2 activeOut pipe3
+state set p3 activeIn pipe3
+state set p3 activeOut pipe5
+state set p4 activeIn pipe6
+state set p4 activeOut pipe9
+state set p5 activeIn pipe9
+state set p5 activeOut pipe12
+state set p6 activeIn pipe12
+state set p6 activeOut pipe15
+state set pipe8 broken true
+state set pipe1 heldWater 1
+state set p3 heldWater 3
+state set p4 heldWater 8
+state set p5 heldWater 12
+state set p6 heldWater 18
+state set p2 broken true
+state set pipe8 glued true
+state set pipe3 lubricated true
+startGame

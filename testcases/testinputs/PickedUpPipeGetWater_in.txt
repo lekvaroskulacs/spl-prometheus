@@ -1,0 +1,10 @@
+create pipe1 pipe
+create spring1 spring
+create pump1 pump
+create mechanic1 mechanic
+connect pipe1 spring1
+connect pipe1 pump1
+move mechanic1 pump1
+pickup mechanic1 pipe1
+waterFlow spring1
+state get counter saboteurPoints

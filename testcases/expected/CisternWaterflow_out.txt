@@ -1,0 +1,10 @@
+> pipe1 created
+> pump1 created
+> cistern1 created
+> pipe1.nodes = pump1
+> pump1.pipes = pipe1
+> pipe1.nodes = pump1, cistern1
+> cistern1.pipes = pipe1
+> pipe1.heldWater = 1
+> pipe1 lost 1
+> counter.mechanicPoints = 1

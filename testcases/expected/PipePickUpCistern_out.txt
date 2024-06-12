@@ -1,0 +1,11 @@
+> pipe1 created
+> cistern1 created
+> pump1 created
+> mechanic1 created
+> pipe1.nodes = cistern1
+> cistern1.pipes = pipe1
+> pipe1.nodes = cistern1, pump1
+> pump1.pipes = pipe1
+> cistern1.players = mechanic1
+> mechanic1.standingOn = cistern1
+> mechanic1.heldItems = pipe1

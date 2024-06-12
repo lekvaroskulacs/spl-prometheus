@@ -1,0 +1,22 @@
+create pipe1 pipe
+create pipe2 pipe
+create pipe3 pipe
+create pipe4 pipe
+create pump1 pump
+create pump2 pump
+create pump3 pump
+create pump4 pump
+create pump5 pump
+create mechanic1 mechanic
+connect pipe1 pump5
+connect pipe2 pump5
+connect pipe3 pump5
+connect pipe4 pump5
+connect pipe1 pump1
+connect pipe2 pump2
+connect pipe3 pump3
+connect pipe4 pump4
+state set pump5 activeIn pipe1
+state set pump5 activeOut pipe2
+move mechanic1 pump5
+redirect mechanic1 pipe3 pipe4

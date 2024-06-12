@@ -1,0 +1,15 @@
+> pipe1 created
+> pump1 created
+> cistern1 created
+> mechanic1 created
+> pipe1.nodes = pump1
+> pump1.pipes = pipe1
+> pipe1.nodes = pump1, cistern1
+> cistern1.pipes = pipe1
+> genpump1 created
+> genpipe1 created
+> cistern1.createdPickupables = genpipe1, genpump1
+> cistern1.players = mechanic1
+> mechanic1.standingOn = cistern1
+> mechanic1.heldItems = genpump1
+INFO: "Can't place it here"
